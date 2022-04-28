@@ -14446,8 +14446,29 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/QQNNSX/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-send(msg.chat_id,msg.id,"black")
+photo = "https://t.me/photojack14366/58"
+local T =[[
+ــــــــــــــــــــــ❍ـــــــــــــــــــــ
+ ❍ 𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾 ❍
+ــــــــــــــــــــــ❍ـــــــــــــــــــــ
+❍ 𝐷𝐸𝑉 >> [˹ 𝐽𝐴𝐶𝐾 .](t.me/PHP57)
+ــــــــــــــــــــــ❍ـــــــــــــــــــــ 
+❍ـــ❍ >> [˹ 𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾 .](t.me/J_F_A_I)
+ــــــــــــــــــــــ❍ـــــــــــــــــــــ 
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = '🖤 𝑱𝑨𝑪𝑲 🖤', url = "https://t.me/medusavip21"},
+},
+{
+{text = '𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾 ', url = "https://t.me/J_F_A_I"}
+},
+}
+local msgg = msg_id/2097152/0.5
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(T).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'الاوامر' then
 if not msg.Admin then
 return send(msg_chat_id,msg_id,'\n*❍ هذا الامر يخص  '..Controller_Num(7)..' * ',"md",true)  
