@@ -14461,7 +14461,7 @@ local T =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '🖤 𝑱𝑨𝑪𝑲 🖤', url = "https://t.me/medusavip21"},
+{text = '🖤 𝑱𝑨𝑪𝑲 🖤', url = "https://t.me/V_P_E"},
 },
 {
 {text = '𝑆𝑂𝑈𝑅𝐶𝐸 𝐵𝐿𝐴𝐶𝐾 ', url = "https://t.me/J_F_A_I"}
