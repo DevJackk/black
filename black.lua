@@ -10607,7 +10607,7 @@ if text == "تاك للزوجات" or text == "الزوجات" then
   return send(msg_chat_id,msg_id,zwga_list,"md",true) 
 end
 -- tlaq
-if text == "طلاق" or text == "تنزيل زوجتي" or text == "تزيل زوجي" and msg.reply_to_message_id ~= 0 then
+if text == "تنزيل زوجتي" or text == "تزيل زوجي" and msg.reply_to_message_id ~= 0 then
   local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
   local UserInfo = LuaTele.getUser(Message_Reply.sender_id.user_id)
   if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
@@ -13881,7 +13881,7 @@ Redis:del(black..msg_chat_id..msg.sender_id.user_id.."rgalll2:")
 Redis:del(black..msg_chat_id..zwga_id.."rgalll2:")
 LuaTele.sendText(msg_chat_id,msg_id,"• تم خلعت زوجك "..alzog.." \n• وتم إرجاع المهر له  ("..mhrr.."  جنية 💸)","md")
 end
-if text == "طلاقق" and Redis:get(black..msg_chat_id..msg.sender_id.user_id.."rgalll2:") then
+if text == "طلاق" and Redis:get(black..msg_chat_id..msg.sender_id.user_id.."rgalll2:") then
 local zwga_id = Redis:get(black..msg_chat_id..msg.sender_id.user_id.."rgalll2:") --تخزين الزوج
 local zoog2 = Redis:get(black..msg_chat_id..zwga_id.."bnttt2:") --تخزين الزوجه
 local mhrr = Redis:get(black..msg_chat_id..msg.sender_id.user_id.."mhrrr2:")
