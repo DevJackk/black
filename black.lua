@@ -12052,12 +12052,12 @@ end
 end
 if text and Redis:get(black.."toar"..msg.sender_id.user_id) then
 Redis:del(black.."toar"..msg.sender_id.user_id)
-local json = json:decode(https.request("https://ayad-12.xyz/7oda.php?from=auto&to=ar&text="..text)).result
+local json = json:decode(https.request("https://api-jack.ml/api35.php?from=auto&to=ar&text="..text)).result
 send(msg_chat_id,msg_id,json,"html",true)
 end
 if text and Redis:get(black.."toen"..msg.sender_id.user_id) then
 Redis:del(black.."toen"..msg.sender_id.user_id)
-local json = json:decode(https.request("https://ayad-12.xyz/7oda.php?from=auto&to=en&text="..text)).result
+local json = json:decode(https.request("https://api-jack.ml/api35.php?from=auto&to=en&text="..text)).result
 send(msg_chat_id,msg_id,json,"html",true)
 end
 if text == 'ترجمه' or text == 'ترجمة' or text == 'ترجم' or text == 'translat' then 
@@ -13258,16 +13258,33 @@ end
 end
 if text == "البنك" then
 local txx = [[
-اوامر لعبه البنك :
-- انشاء حساب بنكي 
-- مسح حسابي
-- فلوسي ، حسابي 
-- تحويل + المبلغ (بعدها يطلب رقم الحساب)
-- ( استثمار ، حظ ، مضاربه ) + المبلغ 
-- راتبي ، راتب
-- بقشيش 
-- هجوم + المبلغ
-- زرف (بالرد)
+✜ اوامر البنك
+
+⌯ انشاء حساب بنكي  ↢ تسوي حساب وتقدر تحول فلوس مع مزايا ثانيه
+
+⌯ مسح حساب بنكي  ↢ تلغي حسابك البنكي
+
+⌯ تحويل ↢ تطلب رقم حساب الشخص وتحول له فلوس
+
+⌯ حسابي  ↢ يطلع لك رقم حسابك عشان تعطيه للشخص اللي بيحول لك
+
+⌯ فلوسي ↢ يعلمك كم فلوسك
+
+⌯ راتب ↢ يعطيك راتبك كل ٢٠ دقيقة
+
+⌯ بخشيش ↢ يعطيك بخشيش كل ١٠ دقايق
+
+⌯ زرف ↢ تزرف فلوس اشخاص كل ١٠ دقايق
+
+⌯ استثمار ↢ تستثمر بالمبلغ اللي تبيه مع نسبة ربح مضمونه من ١٪؜ الى ١٥٪؜
+
+⌯ حظ ↢ تلعبها بأي مبلغ ياتدبله ياتخسره انت وحظك
+
+⌯ مضاربه ↢ تضارب بأي مبلغ تبيه والنسبة من ٩٠٪؜ الى -٩٠٪؜ انت وحظك
+
+⌯ توب الفلوس ↢ يطلع توب اكثر ناس معهم فلوس بكل القروبات
+
+⌯ توب الحراميه ↢ يطلع لك اكثر ناس زرفوا
 - اضف فلوس + المبلغ (بالرد) *للمطور الاساسي فقط*
 
 ]]
